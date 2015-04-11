@@ -1,7 +1,8 @@
 FactoryGirl.define do
   factory :order do
     user
-    supply
-    request { create :request, user: user }
+    startDate
+    endDate
+    destinations
   end
 end
